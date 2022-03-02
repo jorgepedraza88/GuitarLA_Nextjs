@@ -1,0 +1,83 @@
+.guitarra {
+    display: grid;
+    column-gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+@media (min-width: 768px) {
+    .guitarra {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+.contenido {
+    padding: 1rem;
+}
+.contenido h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.precio {
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 600;
+    text-align: right;
+}
+.iva {
+    font-size: 2rem;
+}
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+.enlace:hover {
+    background-color: var(--primary);
+    color: white;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario label {
+    font-size: 1.8rem;
+
+}
+.formulario select {
+    border: 2px solid var(--primary);
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.formulario input[type="submit"] {
+    margin-top: 3rem;
+    display: block;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    padding: 2rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover {
+    background-color: var(--negro);
+}
